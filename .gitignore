@@ -1,6 +1,7 @@
-./venv/
-./.idea/
-.env
+/venv
 /.idea
+
 auto-response.session-journal
 auto-response.session
+
+.env
