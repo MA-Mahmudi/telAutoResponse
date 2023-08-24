@@ -17,8 +17,11 @@ proxy = {
     "port": urlparse(raw_proxy).port,
 }
 
-if not (api_id or api_hash):
+if not api_id or not api_hash:
     raise Exception("You have to pass both API_ID and API_HASH env variables")
 
+app = Client("autoResponse", api_id, api_hash, proxy=proxy)
 
-app = Client("auto-response", api_id, api_hash, proxy=proxy)
+print("Starting...")
+app.run()
+print("Started successfully")

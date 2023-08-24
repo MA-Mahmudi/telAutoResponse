@@ -1,7 +1,8 @@
 /venv
 /.idea
 
-auto-response.session-journal
-auto-response.session
+autoResponse.session-journal
+autoResponse.session
 
 .env
+t1.py
